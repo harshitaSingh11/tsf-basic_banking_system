@@ -1,0 +1,42 @@
+{% extends "layout.html" %}
+{% block body %}
+
+<form name="sentMessage" id="contactForm" novalidate action="{{ url_for('transaction') }}" method="POST">
+    <div class="formSelect">
+        <div class="control-group">
+            <div class="form-group floating-label-form-group controls">
+                <label>SELECT SENDER</label>
+                <select class="form-select form-select-lg mb-3" name="sender" required
+                    aria-label=".form-select-lg example">
+                    {% for c in trans %}
+                    <option value={{c.name}}>{{c.name}}</option>
+                    {% endfor %}
+                </select>
+            </div>
+        </div>
+
+        <div class="control-group">
+            <div class="form-group floating-label-form-group controls">
+                <label>SELECT RECEIVER</label>
+                <select class="form-select form-select-lg mb-3" name="receiver" required
+                    aria-label=".form-select-lg example">
+                    {% for c in trans %}
+                    <option value={{c.name}}>{{c.name}}</option>
+                    {% endfor %}
+                </select>
+            </div>
+        </div>
+    </div>
+    <div class="input-group mb-3">
+        <span class="input-group-text">Rs.</span>
+        <input id="amount" type="tel" name="amount" class="form-control" placeholder="ENTER AMOUNT TO TRANSFER"
+            aria-label="Amount (to the nearest dollar)" required>
+        <span class="input-group-text">.00</span>
+    </div>
+
+    <div class="mb-3">
+        <button class="btn" type="submit">Transfer</button>
+    </div>
+</form>
+
+{% endblock %}

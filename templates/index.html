@@ -1,0 +1,19 @@
+{% extends "layout.html" %}
+{% block body %}
+
+<div class="heroText">
+  <h3>We are</h3>
+  <h1>different.</h1>
+  <h5>We are a <span>business bank</span> dedicated to helping businesses and their principles achieve their
+    financial goals.</h5>
+</div>
+<div class="heroBtns">
+  <a class="button double-box-shadow pill" href="/transaction">TRANSFER MONEY</a>
+  <a class="button double-box-shadow pill" href="/users">VIEW ALL USERS</a>
+</div>
+
+<div class="heroImg">
+  <img src="{{url_for('static', filename='images/Pig.png')}}">
+</div>
+
+{% endblock %}

@@ -1,0 +1,15 @@
+{% extends "layout.html" %}
+{% block body %}
+
+<ul class="list-group list-group-flush user-list-titles">
+        <li class="list-group-item"><span class="user-list-name">NAME</span><span
+                        class="user-list-email">E-MAIL</span><span class="user-list-balance">A/C BALANCE</span></li>
+</ul>
+{% for item in result %}
+<ul class="list-group list-group-flush user-list-entries">
+        <li class="list-group-item"><span class="user-list-name">{{ item.name }}</span><span class="user-list-email">{{
+                        item.email }}</span><span class="user-list-balance"><span>Rs.
+                        </span>{{ item.balance }}</span></li>
+</ul>
+{% endfor %}
+{% endblock %}

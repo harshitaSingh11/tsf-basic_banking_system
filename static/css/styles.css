@@ -1,0 +1,219 @@
+@import url('https://fonts.googleapis.com/css2?family=Georama&display=swap');
+body {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    overflow-x: hidden;
+    background-color: #000;
+    font-family: 'Georama';
+}
+
+nav {
+    height: 100px;
+    margin: 20px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+nav a {
+    font-weight: bold;
+}
+
+.heroText {
+    margin: 20px;
+    margin-top: 120px;
+    margin-left: 40px;
+    color: rgb(255, 255, 255);
+}
+
+.heroText h3 {
+    font-size: 40px;
+}
+
+.heroText h1 {
+    font-size: 160px;
+}
+
+.heroText h5 {
+    font-weight: lighter;
+}
+
+.heroText h5 span {
+    font-weight: 900;
+}
+
+.heroBtns {
+    margin-left: 20px;
+}
+
+.heroBtns a:link, .heroBtns a:visited {
+    color: #fff;
+}
+
+.heroBtns a:hover, .heroBtns a:active {
+    color: #aaa;
+}
+
+.heroBtns .button {
+    text-decoration: none;
+    display: inline-block;
+    padding: .5em 1em;
+    position: relative;
+    margin: 1em;
+    min-width: 10em;
+    text-align: center;
+    transition: 0.4s ease;
+}
+
+.pill {
+    border-radius: 2em;
+}
+
+.heroBtns .button:hover {
+    background-color: #fff;
+    color: #000000;
+}
+
+.double-box-shadow {
+    box-shadow: 0 0 0 1px #fff, 0 0 0 1px #fff;
+}
+
+.heroImg {
+    position: absolute;
+    top: 270px;
+    right: 150px;
+}
+
+.heroImg img {
+    width: 260px;
+    object-fit: contain;
+}
+
+footer p {
+    color: white;
+    font-size: 11px;
+    position: absolute;
+    bottom: 8px;
+    text-align: center;
+    width: 100vw;
+}
+
+.list-group {
+    margin: 20px;
+}
+
+.user-list-titles {
+    margin-top: 50px;
+}
+
+.user-list-entries {
+    margin-top: 0px;
+}
+
+.list-group-item {
+    display: flex;
+    justify-content: space-between;
+}
+
+.user-list-titles span {
+    font-weight: bold;
+}
+
+.history-list-titles {
+    margin-top: 50px;
+}
+
+.history-list-entries {
+    margin-top: 0px;
+}
+
+.history-list-titles span {
+    font-weight: bold;
+}
+
+form {
+    margin: 20px;
+    margin-top: 50px;
+}
+
+form button {
+    background-color: #AD7DF1 !important;
+}
+
+form button:hover {
+    background-color: #b990f3 !important;
+}
+form label{
+    color: white;
+}
+@media (max-width: 600px) {
+    nav {
+        padding-left: 10px;
+        padding-right: 10px;
+        height: 100px;
+        text-align: center;
+    }
+    .navbar-brand {
+        text-align: center !important;
+    }
+    .navbar-collapse a {
+        font-size: 12px;
+    }
+    .navbar-collapse ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .heroText {
+        margin: 20px;
+        margin-top: 60px;
+        /* margin-left: 40px; */
+        color: rgb(255, 255, 255);
+    }
+    .heroText h3 {
+        font-size: 30px;
+    }
+    .heroText h1 {
+        font-size: 80px;
+    }
+    .heroText h5 {
+        font-weight: lighter;
+        font-size: 12px;
+    }
+    .heroImg {
+        visibility: hidden;
+    }
+    .heroBtns {
+        margin-left: 0px;
+    }
+    .user-list-entries span {
+        font-size: 11px;
+    }
+    .history-list-entries span {
+        font-size: 11px;
+    }
+}
+
+@media (max-width: 992px) {
+    .heroImg {
+        visibility: hidden;
+    }
+    nav {
+        padding-left: 10px;
+        padding-right: 10px;
+        height: 100px;
+        text-align: center;
+    }
+    .navbar-brand {
+        text-align: center !important;
+        width: 992px;
+    }
+    .navbar-collapse a {
+        font-size: 12px;
+    }
+    .navbar-collapse ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: left;
+        justify-content: space-evenly;
+    }
+}

@@ -1,0 +1,16 @@
+{% extends "layout.html" %}
+{% block body %}
+
+<ul class="list-group list-group-flush history-list-titles">
+        <li class="list-group-item"><span class="history-list-name">SENDER</span><span
+                        class="history-list-email">RECEIVER</span><span class="history-list-balance">AMOUNT</span></li>
+</ul>
+{% for item in result %}
+<ul class="list-group list-group-flush history-list-entries">
+        <li class="list-group-item"><span class="history-list-name">{{ item.sender }}</span><span
+                        class="history-list-email">{{ item.receiver }}</span><span
+                        class="history-list-balance"><span>Rs.
+                        </span>{{ item.amount }}</span></li>
+</ul>
+{% endfor %}
+{% endblock %}
